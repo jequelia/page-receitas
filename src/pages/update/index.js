@@ -63,7 +63,7 @@ function Update() {
                     placeholder='coloque o link da foto da receita' 
                     onChange={(e) => setImg(e.target.value)} />
                 </Form.Field>
-                <div class="row">
+                <div className="row">
                     <Form.Field id="input1">
                         <label>Tempo</label>
                         <input 

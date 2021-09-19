@@ -50,7 +50,7 @@ function Register() {
                     onChange={(e) => setImg(e.target.value)} />
                 </Form.Field>
 
-                <div class="row">
+                <div className="row">
                     <Form.Field id="input1">
                         <label>Tempo</label>
                         <input placeholder='tempo de preparo' 

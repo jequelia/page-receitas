@@ -10,13 +10,14 @@ export const Container  = styled.section`
     background: white;
     width: 70%;
     padding: 59px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     .details{
         display: flex;
         width: 100%;
         #image{
-            width: 30vw;
+            max-width: 30vw;
+            min-width: 30vw;
             margin-right: 30px;
 
             img{

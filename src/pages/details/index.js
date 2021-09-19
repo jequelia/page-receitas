@@ -43,7 +43,7 @@ function Details() {
 
               <div>
                 <h3>Quantidade de porções</h3>
-                <p>{portions}</p>
+                <p>{portions} porções</p>
               </div>
             </div>
 
