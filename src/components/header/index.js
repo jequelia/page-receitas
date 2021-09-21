@@ -13,9 +13,9 @@ function Header() {
             </Issues>
 
             <Issues>
-                <a  href="/register">
+                <a  href="/videos">
                     <div>
-                        <p>Adicionar receita</p>
+                        <p>Vídeos</p>
                     </div>
                 </a>
             </Issues>

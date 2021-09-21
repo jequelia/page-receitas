@@ -10,6 +10,16 @@ export const Container  = styled.section`
 
     h1{
         color: #ff6a28;
-        margin: 30px
+    }
+
+    .cel{
+        display: flex;
+        margin: 45px;
+
+        button{
+            margin-left: 15px;
+            color: white;
+            background:#ff6a28;
+        }
     }
 `

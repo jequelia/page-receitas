@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router';
 import {Container, Flex} from './style';
 import { Button } from 'semantic-ui-react'
+import Header from "../../components/header"
 
 
 function Details() {
@@ -18,14 +19,15 @@ function Details() {
     setImg(localStorage.getItem('Imagem'));
     setPortions(localStorage.getItem('Porção'));
     setTime(localStorage.getItem('Tempo'));
-    setIngredients(localStorage.getItem('Ingredientes'));
-    setSteps(localStorage.getItem('Modo de preparo'))
+    setIngredients(localStorage.getItem('Ingredientes').split(','));
+    setSteps(localStorage.getItem('Modo de preparo'));
   }, []);
 
   let history = useHistory();
+
     return (
       <Flex>
-
+      <Header/>
       <Container>
         <div className="details">
           <div id="image">
@@ -48,10 +50,15 @@ function Details() {
             </div>
 
             <div className="steps">
-              <div id="ingred">
-                <h3>Ingredientes necessários</h3>
-                <p>{ingredients}</p>
-              </div>
+
+            <div id="ingred">
+              <h3>Ingredientes necessários</h3>
+              {console.log(ingredients)}
+              {ingredients? ingredients.map((text)=>( 
+                <p>{text}</p>
+              )): <p> não existe ingredients </p>}
+            </div>
+            
               <div id="info">
                 <div id="preps">
                 <h3>Forma de Preparo</h3>

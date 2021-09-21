@@ -35,7 +35,8 @@ export const Description = styled.div`
     }
 
     img{
-        width: auto;
+        max-width: 10vw;
+        min-width: 10vw;
         height: 100%;
         margin-right: 15px;
     }

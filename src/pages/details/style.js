@@ -18,10 +18,12 @@ export const Container  = styled.section`
         #image{
             max-width: 30vw;
             min-width: 30vw;
+            height: 70vh;
             margin-right: 30px;
 
             img{
-                width: 100%;
+                max-width: 100%;
+                min-width: 100%;
                 height: 100%;
             }
         }
@@ -35,7 +37,10 @@ export const Container  = styled.section`
     }
     .steps{
         width: 100%;
-         margin-top: 53px;
+         margin-top: 20px;
+    }
+    #ingred{
+        margin-bottom: 15px;
     }
 
     #button{

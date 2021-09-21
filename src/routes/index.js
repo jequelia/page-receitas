@@ -5,6 +5,8 @@ import Details from '../pages/details';
 import Register from '../pages/register';
 import Home from '../pages/home';
 import Update from '../pages/update'
+import Videos from '../pages/videos'
+
 
 const Routes = () => {
     return (
@@ -13,6 +15,8 @@ const Routes = () => {
             <Route exact path="/update" component={Update}></Route>
             <Route exact path="/" component={Home}></Route>
             <Route path="/details" component={Details}></Route>
+            <Route path="/videos" component={Videos}></Route>
+
         </Switch>
     );
 }
