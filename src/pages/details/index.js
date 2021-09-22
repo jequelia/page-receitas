@@ -64,11 +64,11 @@ function Details() {
                 <h3>Forma de Preparo</h3>
                   <p>{steps}</p>
                 </div>
+                <Button id="button" onClick={() => history.push('/')}>Voltar</Button>
               </div>
             </div>
           </div>
         </div>
-        <Button id="button" onClick={() => history.push('/')}>Voltar</Button>
 
 
         

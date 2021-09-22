@@ -18,7 +18,7 @@ export const Container  = styled.section`
         #image{
             max-width: 30vw;
             min-width: 30vw;
-            height: 70vh;
+            height: 56vh;
             margin-right: 30px;
 
             img{

@@ -7,7 +7,7 @@ export const Container  = styled.article`
     align-items: center;
     background: white;
     color: #ff6a28;
-    width: 50vw;
+    width: 40vw;
     height: 15vh;
     transition: 0.5s;
     margin-bottom: 15px;
@@ -37,14 +37,38 @@ export const Description = styled.div`
     img{
         max-width: 10vw;
         min-width: 10vw;
-        height: 100%;
+        max-height: 15vh;
+        min-height: 15vh;
         margin-right: 15px;
+
     }
 
     svg{
-        width: 6vw;
-        height: 6vh;
+        width: 4vw;
+        height: 4vh;
         color: #ff6a28;
+    }
+    svg:hover{
+        color: #ffa37a;
+    }
+
+    .flex{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+        height: 100%
+        justify-content: space-between;
+        align-items: center;
+
+        #delete{
+            margin-top: 15px;
+            cursor: pointer;
+        }
     }
 
 `

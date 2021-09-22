@@ -22,4 +22,25 @@ export const Container  = styled.section`
             background:#ff6a28;
         }
     }
+
+    .add{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 18vw;
+
+         svg{
+            width: 4vw;
+            height: 4vh;
+            color: #ff6a28;
+            cursor: pointer;
+        }
+        svg:hover{
+            color: #ffa37a;
+        }
+
+        h1{
+            margin:0;
+        }
+    }
 `
